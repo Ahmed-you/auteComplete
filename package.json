@@ -1,0 +1,21 @@
+{
+  "type": "module",
+  "name": "autocomplete",
+  "version": "1.0.0",
+  "description": "type something and i will show suggestion words so u can type faster than ever",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ahmed-you/auteComplete.git"
+  },
+  "author": "Ahmed Younis",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ahmed-you/auteComplete/issues"
+  },
+  "homepage": "https://github.com/Ahmed-you/auteComplete#readme"
+}
