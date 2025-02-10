@@ -1,9 +1,13 @@
 import fs from "node:fs";
 import endpointParser from "../utils/endpointParser.js";
-export const suggestedWord = (req, res) => {
-  const pathToFile =
-    "/home/luffy/Documents/Gaza Sky Geeks Training/Week4 /auteComplete/src/data/words.txt";
+import { fileURLToPath } from "node:url"; // lets us turn `import.meta.url` into __dirname-like behavior
+import path from "node:path";
 
+// Convert `import.meta.url` to a file path
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+export const suggestedWord = (req, res) => {
+  const pathToFile = path.join(__dirname, "..", "data", "words.txt");
   // use read file function to access dictionary data and search it
 
   fs.readFile(pathToFile, "utf-8", (error, file) => {
