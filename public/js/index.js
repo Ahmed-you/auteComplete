@@ -28,7 +28,7 @@ const suggestionWordsApi = () => {
 
       return;
     }
-    let url = `http://localhost:4001/api/suggestedWord?word=${data}`;
+    let url = `/api/suggestedWord?word=${data}`;
 
     id = setTimeout(() => {
       xhr.open("GET", url, true);
